@@ -14,7 +14,7 @@ app.use(express.static("public"));
 
 mongoose
   .connect(
-    "mongodb+srv://devleena2003:rule-engine@cluster0.xz1go.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    "MONGODB_URL"
   )
   .then(() => {
     console.log("Connected to MongoDB");
