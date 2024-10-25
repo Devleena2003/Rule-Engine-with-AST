@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const path = require("path");
-const ruleRoutes = require("./routes/ruleRoutes");
+const ruleRoutes = require("./views/routes/ruleRoutes");
 
 const app = express();
 const PORT = 5000;
