@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+font-family: 'Poppins';
+margin: 0;
+padding: 0;
+background-color: #000000;
+color: #e4ff37;
+
+}
+
+.container {
+width: auto;
+margin: 20px auto;
+padding: 15px;
+background-color: #21212188;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+display: flex;
+justify-content: space-evenly;
+
+}
+.first-card, .second-card, .third-card {
+    width: 30%;
+}
+h1, h2 {
+text-align: center;
+color: #e4ff37;
+}
+
+form {
+margin: 0;
+}
+
+form div, form label {
+display: block;
+margin-bottom: 5px;
+}
+
+form input[type="text"], form textarea, form select {
+width: calc(100% - 18px);
+padding: 15px;
+margin: 0;
+background-color: #000000;
+border: 1px solid #ddd;
+border-radius: 4px;
+box-sizing: border-box;
+color: #ddd;
+}
+
+form textarea {
+height: 80px;
+}
+
+form button {
+display: block;
+width: calc(100% - 18px);
+padding: 15px;
+margin-top: 10px;
+border: none;
+background-color: #e4ff37;
+color: #000000;
+border-radius: 4px;
+cursor: pointer;
+font-size: 14px;
+}
+
+form button:hover {
+background-color: #86942f;
+}
+
+pre {
+width: 92%;
+padding: 8px;
+border: 1px solid #ddd;
+border-radius: 4px;
+white-space: pre-wrap;
+word-wrap: break-word;
+}
+
+
+.rule-container {
+
+padding: 8px;
+border-radius: 4px;
+
+margin-bottom: 8px;
+}
+
+.rule-container label {
+margin-right: 8px;
+}
+
+#add-rule {
+margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.container {
+padding: 10px;
+}
+
+form input[type="text"], form textarea, form select {
+width: calc(100% - 16px);
+padding: 6px;
+}
+
+form button {
+padding: 6px;
+font-size: 12px;
+}
+
+form textarea {
+height: 60px;
+}
+}
+
+@media (max-width: 480px) {
+.container {
+padding: 5px;
+margin: 10px;
+}
+
+form input[type="text"], form textarea, form select {
+width: calc(100% - 14px);
+padding: 5px;
+}
+
+form button {
+padding: 5px;
+font-size: 10px;
+}
+
+form textarea {
+height: 50px;
+}
+}
